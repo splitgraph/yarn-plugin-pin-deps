@@ -1,13 +1,12 @@
 {
+  "extends": "../../tsconfig.json",
+  "include": ["sources/**/*.ts"],
   "compilerOptions": {
     "experimentalDecorators": true,
     "module": "commonjs",
     "target": "ES2019",
-    "lib": [
-      "ES2019"
-    ]
-  },
-  "include": [
-    "sources/**/*.ts"
-  ]
+    "lib": ["ES2019"],
+    "strict": true,
+    "noImplicitAny": true
+  }
 }

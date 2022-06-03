@@ -29,9 +29,10 @@
     "declarationMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": true,
     "paths": {
       "@splitgraph-dev/root/*": ["*"],
-      "@splitgraph-dev/scripts/*": ["./packages/scripts/*"]
+      "@splitgraph-dev/plugin-pin-deps/*": ["./packages/plugin-pin-deps/*"]
     }
   },
   "exclude": ["node_modules", ".*", "public", "dist"],
@@ -39,8 +40,6 @@
     "packages/**/*.js",
     "packages/**/*.ts",
     "packages/**/*.tsx",
-    "vendor/**/*.js",
-    "vendor/javascript-heap-inspector/src/*.ts",
-    "vendor/javascript-heap-inspector/src/**/*.ts"
+    "packages/**/sources/**/*.ts"
   ]
 }
