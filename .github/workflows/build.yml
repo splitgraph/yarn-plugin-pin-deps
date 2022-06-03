@@ -1,0 +1,17 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: "yarn"
+      - run: yarn install --immutable
+      - run: yarn format.check
+      - run: yarn typecheck
+      - run: yarn build

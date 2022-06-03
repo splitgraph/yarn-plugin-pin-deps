@@ -3,8 +3,7 @@
   "packageManager": "yarn@3.2.1",
   "private": true,
   "scripts": {
-    "start": "yarn workspace @splitgraph-dev/server run start",
-    "scripts": "yarn workspace @splitgraph-dev/scripts run scripts",
+    "build": "yarn workspace @splitgraph-dev/yarn-plugin-pin-deps build",
     "typecheck": "yarn tsc --build --verbose",
     "format": "yarn run format.base --write --list-different .",
     "format.check": "yarn run format.base --check . || { yarn run format.warn ; }",

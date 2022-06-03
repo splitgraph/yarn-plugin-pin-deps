@@ -35,7 +35,7 @@
       "@splitgraph-dev/plugin-pin-deps/*": ["./packages/plugin-pin-deps/*"]
     }
   },
-  "exclude": ["node_modules", ".*", "public", "dist"],
+  "exclude": ["node_modules", ".*", "public", "dist", "bundles"],
   "include": [
     "packages/**/*.js",
     "packages/**/*.ts",
